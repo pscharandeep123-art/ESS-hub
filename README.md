@@ -90,5 +90,27 @@ The application follows a standard **MERN-like architecture** but uses **FastAPI
 4.  **How does the AI give feedback?** We use prompt engineering to guide an LLM to analyze the JSON resume data and return constructive feedback.
 5.  **What is an ATS score?** Applicant Tracking System score; it measures how well a resume is optimized for automated screening tools.
 
+## 10. How to Run (Local Setup)
+
+### Prerequisites
+- Python 3.8+
+- Node.js & npm
+- MongoDB (Local or Atlas)
+
+### Backend Setup
+1. Navigate to `backend` directory: `cd backend`
+2. Create a virtual environment: `python -m venv venv`
+3. Activate it:
+   - Windows: `venv\Scripts\activate`
+   - Mac/Linux: `source venv/bin/activate`
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the server: `uvicorn main:app --reload`
+
+### Frontend Setup
+1. Navigate to `frontend` directory: `cd frontend`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
 ---
 *Created for the Final Year Diploma Project.*
