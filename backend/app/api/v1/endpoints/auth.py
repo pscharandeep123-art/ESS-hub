@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
-from ...db.mongodb import get_database
-from ...models.schemas import UserCreate, UserResponse, Token
-from ...core.security import get_password_hash, verify_password, create_access_token
-from ...core.config import settings
+from app.db.mongodb import get_database
+from app.models.schemas import UserCreate, UserResponse, Token
+from app.core.security import get_password_hash, verify_password, create_access_token
+from app.core.config import settings
 from datetime import timedelta, datetime
 from bson import ObjectId
 

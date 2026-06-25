@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from ....services.ai_service import AIService
-from ....db.mongodb import get_database
-from .deps import get_current_user
+from app.services.ai_service import AIService
+from app.db.mongodb import get_database
+from app.api.v1.endpoints.deps import get_current_user
 
 router = APIRouter()
 

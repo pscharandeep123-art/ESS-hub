@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
-from ....db.mongodb import get_database
-from ....models.schemas import ResumeBase
-from .deps import get_current_user
+from app.db.mongodb import get_database
+from app.models.schemas import ResumeBase
+from app.api.v1.endpoints.deps import get_current_user
 from bson import ObjectId
 
 router = APIRouter()
